@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+array('class' => '${1:span12}')
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>as12</tabTrigger>
+	<description>
+		Array Class span12
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+echo \$this->Paginator->counter(array(
+								__('Pág. %page% de %pages% , listando %current% registros. Total de %count%, começando pelo registro %start% e finalizando em %end', true)
+							)
+						);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cvpgc</tabTrigger>
+	<description>
+		CakePHP Paginator counter
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\$this->Acl->deny(\$Grupo, 'controllers/${1:controller}/${2:action}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>acld</tabTrigger>
+	<description>
+		Acl deny controllers
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

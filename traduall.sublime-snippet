@@ -1,0 +1,55 @@
+<snippet>
+	<content><![CDATA[
+msgid "Admin Add ${1:singular}"
+msgstr "Cadastrar ${2:singular_br}"
+
+msgid "Admin List ${3:plural}"
+msgstr "Listar ${4:plural_br}"
+
+msgid "Admin Edit ${1:singular}"
+msgstr "Editar ${2:singular_br}"
+
+msgid "View ${1:singular}"
+msgstr "Visualizar ${2:singular_br}"
+
+msgid "New ${1:singular}"
+msgstr "Cadastrar ${2:singular_br}"
+
+msgid "Add ${1:singular}"
+msgstr "Cadastrar ${2:singular_br}"
+
+msgid "List ${3:plural}"
+msgstr "Listar ${4:plural_br}"
+
+msgid "Edit ${1:singular}"
+msgstr "Editar ${2:singular_br}"
+
+msgid "View ${1:singular}"
+msgstr "Visualizar ${2:singular_br}"
+
+msgid "${1:singular}"
+msgstr "${2:singular_br}"
+
+msgid "${3:plural}"
+msgstr "${4:plural_br}"
+
+msgid "${8:singular_lower}"
+msgstr "${2:singular_br}"
+
+msgid "${5:plural_lower}"
+msgstr "${4:plural_br}"
+
+msgid "${6:singular_mysql}_id"
+msgstr "${4:plural_br}"
+
+msgid "${7:plural_mysql}"
+msgstr "${4:plural_br}"
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>traduall</tabTrigger>
+	<description>
+		description complete model
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

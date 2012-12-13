@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<?php echo \$this->Html->link(${1:label}, array(${2:link}), array(${3:outros})) ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>thl</tabTrigger>
+	<descritpion>
+		cakephp this html link
+	</descritpion>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

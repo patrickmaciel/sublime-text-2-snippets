@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+msgid ${1:english}
+msgstr ${2:br}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tradu</tabTrigger>
+	<description>
+		tradução cakephp
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<?php
+App::uses('ModelBehavior', 'Model');
+
+class ${1:behavior}Behavior extends ModelBehavior {
+
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cmb</tabTrigger>
+	<description>
+		CakePHP Model Behavior
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+echo '<div style="display:none;">' . \$${1:variavel} . '</div>';
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>edn</tabTrigger>
+	<description>
+		echo display none
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

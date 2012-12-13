@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<?php echo \$this->Html->link('<i class="icon-remove icon-white"></i> ' . __('Delete'), array('action' => 'delete', \$${1:var}['${2:Model}']['id']), array('class' => 'btn btn-mini btn-danger btn-delete', 'escape' => false, 'data-toggle' => 'modal', 'data-target' => '#myModal')); ?>
+
+<?php 
+	echo \$this->Form->create(null, array('id' => \$${1:var}['${2:Model}']['id'], 'class' => 'hide', 'url' => array('controller' => \$this->params->controller, 'action' => 'delete', \$${1:var}['${2:Model}']['id']) ) );
+	echo \$this->Form->end();
+?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fdb</tabTrigger>
+	<description>
+		Form Delete Bootstrap
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

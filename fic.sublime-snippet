@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+echo \$this->Form->input('${1:field}', array('label' => array('text' => '${2:label}', 'cakephp' => true), 'div' => ${3:false}, 'error' => ${4:false}, 'cakephp' => true));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fic</tabTrigger>
+	<description>
+		form field cakephp
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

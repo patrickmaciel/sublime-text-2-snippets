@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+style='display:none;'
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>hsdn</tabTrigger>
+	<description>
+		HTML style display none
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

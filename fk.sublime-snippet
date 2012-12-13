@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+KEY `${1:fk}` (`${2:id}`),
+CONSTRAINT `${1:fk}` FOREIGN KEY (`${2:id}`) REFERENCES `${3:table}` (`${4:campo}`) ON DELETE NO ACTION ON UPDATE NO ACTION 
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fk</tabTrigger>
+	<description>
+		fk
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

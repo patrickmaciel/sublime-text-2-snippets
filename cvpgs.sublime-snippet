@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<?php echo \$this->Paginator->sort('${1:label}','${2:campo}');?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cvpgs</tabTrigger>
+	<description>
+		CakePHP Paginator sort links table
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

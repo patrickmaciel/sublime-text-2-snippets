@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<div class="input-append date" id="${1:id}" class="${2:class}" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+	<label for="${1:id}">
+		${3:field}
+	</label>
+
+	<input name="${1:id}" class="span${4:2}" type="${5:text}" value="${6:12-02-2012}" readonly>
+	<span class="add-on"><i class="icon-th"></i></span>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>b-dp</tabTrigger>
+	<description>
+		bootstrap datepicker
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

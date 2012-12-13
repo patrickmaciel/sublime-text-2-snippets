@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+echo \$this->Html->link(
+	\$this->Html->image('/uploads/' . \$this->Time->format('Y/m/d', \$${1:var}['${2:Model}']['created']) . '/${3:folder}/${4:crop_}' . \$${1:var}['${2:Model}']['${5:thumb}'], array('alt' => \$${1:var}['${2:Model}']['${7:title}'], 'class' => '${8:preview-normal}') ),
+	'/uploads/' . \$this->Time->format('Y/m/d', \$${1:var}['${2:Model}']['created']) . '/${3:folder}/${6:resize_}' . \$${1:var}['${2:Model}']['${5:thumb}'],
+	array('title' => \$${1:var}['${2:Model}']['${7:title}'], 'escape' => false, 'rel' => 'lightbox')
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>aive</tabTrigger>
+	<description>
+		link image view edit lightbox
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

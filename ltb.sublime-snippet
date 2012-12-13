@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<label for="${1:name}">${2:label}</label>
+<textarea id="${1:name}" name="${1:name}" rows="${3:5}" cols="${4:10}">${5}</textarea>
+<br />
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ltb</tabTrigger>
+	<description>
+		label textarea br
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

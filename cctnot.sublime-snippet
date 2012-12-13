@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+throw new NotFoundException('${1:oque} inválid${2:o}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cctnot</tabTrigger>
+	<description>
+		CakePHP not foud 404 exception
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

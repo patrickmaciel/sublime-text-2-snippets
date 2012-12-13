@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<div class="row-fluid">
+	<div class="span12">
+		${1:cursor}
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>est</tabTrigger>
+	<description>
+		Estudo Template
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

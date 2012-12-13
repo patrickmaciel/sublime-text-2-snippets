@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+echo \$this->Form->input('${1:field}', array('label' => '${2:label}' ${3:outros}));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tfi</tabTrigger>
+	<description>
+		CakePHP Form Input
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

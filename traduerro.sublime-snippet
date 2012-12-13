@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+msgid "Invalid ${1:lower}"
+msgstr "${2:upperbr} não existe"
+
+msgid "The ${1:lower} has been saved"
+msgstr "${3:O} ${4:lowerbr} foi salv${5:o}" 
+
+msgid "The ${1:lower} could not be saved. Please, try again."
+msgstr "${3:O} ${4:lowerbr} não pode ser salv${5:o}. Por favor, tente novamente."
+
+msgid "${6:upper} deleted"
+msgstr "${2:upperbr} foi excluíd${5:o}"
+
+msgid "${6:upper} was not deleted"
+msgstr "${2:upperbr} não pode ser excluid${5:o}"
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>traduerro</tabTrigger>
+	<description>
+		Tradução dos erros de um Controller
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

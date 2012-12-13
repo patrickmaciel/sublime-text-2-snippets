@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\$this->Html->link(${1:link}, array('controller' => '${2:controller}', 'action' => '${3:action}', ${4:param}), array('escape' => ${5:escape} ${6:other}));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cvhlp</tabTrigger>
+	<description>CakePHP Link Normal</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

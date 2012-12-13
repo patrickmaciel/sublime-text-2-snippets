@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+Dados salvos com sucesso
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cksfsave</tabTrigger>
+	<description>
+		cakephp session flash save
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

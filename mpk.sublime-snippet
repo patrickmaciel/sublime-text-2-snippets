@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+int not null auto_increment primary key
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mpk</tabTrigger>
+	<description>
+		MySQL id PK
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

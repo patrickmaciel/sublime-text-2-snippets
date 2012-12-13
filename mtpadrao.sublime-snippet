@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+drop table if exists ${1:tabela};
+create table ${1:tabela} (
+	id int not null auto_increment primary key,
+	${2:fields}
+	created datetime,
+	modified datetime,
+	active boolean not null default 1
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mtpadrao</tabTrigger>
+	<description>
+		MySQL Default table
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

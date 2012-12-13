@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<label for="${1:name}">${2:label}</label>
+<input id="${1:name}" class="span${3:12}" name="${1:name}" type="${4:text}" placeholder="${5:placeholder}" value="${6}" />
+<br />
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>b-lib</tabTrigger>
+	<description>
+		label input br
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

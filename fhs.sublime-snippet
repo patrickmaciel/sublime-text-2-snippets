@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<div class="control-group">
+	<?php echo \$this->Form->label('${1:atributo}', '${2:label}', array('class' => 'control-label ${3:classe}')) ?>
+	<div class="controls">
+		<?php echo \$this->Form->select('${1:atributo}', \$${6:options}, array('class' => '${5:span16}')) ?>
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fhs</tabTrigger>
+	<description>
+		CakePHP Form Field
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

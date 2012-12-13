@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<?php echo HTML::link(${1:url}, '${2:name}', array('title' => '${3:title}')); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lhl</tabTrigger>
+	<description>Laravel HTML Link</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

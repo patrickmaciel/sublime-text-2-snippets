@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<?php echo \$this->Html->link('<i class="${1:icon-chevron-right}"></i>' . __('${2:label}'), array(${3:link}), array('escape' => false ${4:outros})) ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>hib</tabTrigger>
+	<description>
+		Html Link Boostrap Icon
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

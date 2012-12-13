@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<?php echo \$this->Paginator->first('${1:<<}' . __('', true), array(), null, array('class'=>'${2:disabled}'));?>            
+<?php echo \$this->Paginator->prev( '${3:<}' . __('', true), array(), null, array('class'=>'${4:disabled}'));?>
+<?php echo \$this->Paginator->numbers('separator' => ${5:false}, 'tag' => ${6:false});?>
+<?php echo \$this->Paginator->next(__('', true) . '${7:>}', array(), null, array('class' => '${8:disabled}'));?>
+<?php echo \$this->Paginator->last(__('', true) . '${9:>>} ', array(), null, array('class' => '${10:disabled}'));?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cvpg</tabTrigger>
+	<description>
+		CakePHP Paginator links
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

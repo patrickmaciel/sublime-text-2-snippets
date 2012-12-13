@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+'${1:campo}' => array(
+	'${2:rule}' => array(
+		'rule' => array('${2:rule}'),
+		'message' => '${3:message}',
+		//'allowEmpty' => false,
+		//'required' => false,
+		//'last' => false, // Stop validation after this rule
+		//'on' => 'create', // Limit validation to 'create' or 'update' operations
+	),
+)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cmvr</tabTrigger>
+	<description>
+		CakePHP Model Validate Rule
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

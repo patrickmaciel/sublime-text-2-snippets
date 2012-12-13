@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<label for="${1:name}">${2:label}</label>
+<select name="${1:name}" id="${1:name}" ${3}>
+	${4}
+</select>
+<br />
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lsb</tabTrigger>
+	<description>
+		label select br
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

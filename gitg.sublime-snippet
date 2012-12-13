@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+/app/tmp
+/lib/Cake/Console/Templates/skel/tmp/
+/build
+/dist
+.DS_Store
+/tags
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gitg</tabTrigger>
+	<description>
+		git ignore
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

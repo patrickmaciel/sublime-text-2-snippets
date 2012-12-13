@@ -1,0 +1,23 @@
+[
+	{
+		"args": null
+	},
+	{
+		"args":
+		{
+			"set_translate_tabs": true
+		},
+		"command": "unexpand_tabs"
+	},
+	{
+		"args":
+		{
+			"single_line": true
+		},
+		"command": "reindent"
+	},
+	{
+		"args": {"setting": "tab_size", "value": 4},
+		"command": "set_setting"
+	}
+]

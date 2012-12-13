@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+Router::connect('${1:route}', array('controller' => '${2:controller}', 'action' => '${3:action}', '${4:prefix}' => ${5:false}));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ckroute</tabTrigger>
+	<description>
+		CakePHP Route
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

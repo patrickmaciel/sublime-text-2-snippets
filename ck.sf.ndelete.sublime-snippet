@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+Não foi possível deletar ${1:o} ${2:usuario}, tente novamente
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>
+		ck.sf.ndelete
+	</tabTrigger>
+	<description>
+		cakephp session flash not delete
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+array(
+	'table' => '${1:table}',
+	'alias' => '${2:alias}',
+	'type' => 'INNER',
+	'conditions' => array(
+		'${2:alias}.${3:campo} = ${4:join}.${5:campo}'
+	)
+),
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ckjoin</tabTrigger>
+	<description>
+		cakephp join
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

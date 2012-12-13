@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+echo '<div style="display:none;">';
+	print_r(\$${1:variavel});
+echo '</div>';
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ednp</tabTrigger>
+	<description>
+		echo display none print_r
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

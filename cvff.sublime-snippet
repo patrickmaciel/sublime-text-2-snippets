@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<div class="clearfix">
+	<?php echo \$this->Form->label('${1:atributo}', '${2:label}') ?>
+	<div class="input ${3:classe}">
+		<?php echo \$this->Form->input('${1:atributo}', array('type' => '${4:textarea}', 'class' => '${5:span16}')) ?>
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cvff</tabTrigger>
+	<description>
+		CakePHP Form Field
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+public \$default = array(
+	'datasource' => 'Database/Mysql',
+	'persistent' => false,
+	'host' => '${1:192.168.1.200}',
+	'login' => '${2:patrick}',
+	'password' => '${3:patrick}',
+	'database' => '${4:pubweb_vale_rac}',
+	'prefix' => '',
+	'encoding' => 'utf8',
+);
+
+public \$test = array(
+	'datasource' => 'Database/Mysql',
+	'persistent' => false,
+	'host' => '${5:localhost}',
+	'login' => '${6:root}',
+	'password' => '${7:cokems4850}',
+	'database' => '${8:database}',
+	'prefix' => '',
+	'encoding' => 'utf8',
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ck-db-pw</tabTrigger>
+	<description>
+		CakePHP database configuration - pubweb
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\$this->Html->image('/uploads/' . \$this->Time->format('Y/m/d/', \$${1:var}['${2:model}']['created']) . '${3:folder}/${4:crop_}' . 
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tthi</tabTrigger>
+	<description>
+		table this html image
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

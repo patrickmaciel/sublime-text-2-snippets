@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+constraint ${1:constraint} foreign key (${2:foreignkey}) references ${3:table}(${4:fields})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tfk</tabTrigger>
+	<description>
+		table constraint foreign key
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

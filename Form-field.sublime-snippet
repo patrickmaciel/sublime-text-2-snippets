@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+{{ Form::label('${1:field}', '${2:label}') }}
+{{ Form::${3:text}('${1:field}') }}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Form</tabTrigger>
+	<description>Form Label input</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

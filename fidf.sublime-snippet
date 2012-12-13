@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+, array('class' => 'input-small-date', 'separator' => '',  'dateFormat' => 'DMY', 'timeFormat' => null)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fidf</tabTrigger>
+	<description>
+		form input datetime default 
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

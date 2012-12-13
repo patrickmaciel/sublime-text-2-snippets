@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\$this->Session->setFlash('${1:desc}', '${2:default}', array('class'=>'${3:message} ${4:success}'));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ccssf</tabTrigger>
+	<description>
+		CakePHP - Session setFlash
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

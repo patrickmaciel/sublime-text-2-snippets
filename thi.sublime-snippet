@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<?php echo \$this->Html->image('${1:imagem}', array('alt' => ${2:alt})) ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>thi</tabTrigger>
+	<description>
+		cakephp this html image
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

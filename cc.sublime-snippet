@@ -1,0 +1,201 @@
+<snippet>
+	<content><![CDATA[
+<?php
+App::uses('AppController', 'Controller');
+/**
+ * ${1:controller} Controller
+ *
+ * @property ${2:model} \$${2:model}
+ */
+class ${1:controller}Controller extends AppController {
+
+
+/**
+ * index method
+ *
+ * @return void
+ */
+	public function index() {
+		\$this->${2:model}->recursive = 0;
+		\$this->set('${3:var}s', \$this->paginate());
+	}
+
+/**
+ * view method
+ *
+ * @param string \$id
+ * @return void
+ */
+	public function view(\$id = null) {
+		\$this->${2:model}->id = \$id;
+		if (!\$this->${2:model}->exists()) {
+			throw new NotFoundException(__('Invalid ${3:var}'));
+		}
+		\$this->set('${3:var}', \$this->${2:model}->read(null, \$id));
+	}
+
+/**
+ * add method
+ *
+ * @return void
+ */
+	public function add() {
+		if (\$this->request->is('post')) {
+			\$this->${2:model}->create();
+			if (\$this->${2:model}->save(\$this->request->data)) {
+				\$this->Session->setFlash(__('The ${3:var} has been saved'), 'alert_success');
+				\$this->redirect(array('action' => 'index'));
+			} else {
+				\$this->Session->setFlash(__('The ${3:var} could not be saved. Please, try again.'), 'alert_error');
+			}
+		}
+		\$${3:var}s = \$this->${2:model}->${2:model}->find('list');
+		\$this->set(compact('${3:var}s'));
+	}
+
+/**
+ * edit method
+ *
+ * @param string \$id
+ * @return void
+ */
+	public function edit(\$id = null) {
+		\$this->${2:model}->id = \$id;
+		if (!\$this->${2:model}->exists()) {
+			throw new NotFoundException(__('Invalid ${3:var}'));
+		}
+		if (\$this->request->is('post') || \$this->request->is('put')) {
+			if (\$this->${2:model}->save(\$this->request->data)) {
+				\$this->Session->setFlash(__('The ${3:var} has been saved'), 'alert_success');
+				\$this->redirect(array('action' => 'index'));
+			} else {
+				\$this->Session->setFlash(__('The ${3:var} could not be saved. Please, try again.'), 'alert_error');
+			}
+		} else {
+			\$this->request->data = \$this->${2:model}->read(null, \$id);
+		}
+		\$${3:var}s = \$this->${2:model}->${2:model}->find('list');
+		\$this->set(compact('${3:var}s'));
+	}
+
+/**
+ * delete method
+ *
+ * @param string \$id
+ * @return void
+ */
+	public function delete(\$id = null) {
+		if (!\$this->request->is('post')) {
+			throw new MethodNotAllowedException();
+		}
+		\$this->${2:model}->id = \$id;
+		if (!\$this->${2:model}->exists()) {
+			throw new NotFoundException(__('Invalid ${3:var}'));
+		}
+		if (\$this->${2:model}->delete()) {
+			\$this->Session->setFlash(__('${2:model} deleted'), 'alert_success');
+			\$this->redirect(array('action' => 'index'));
+		}
+		\$this->Session->setFlash(__('${2:model} was not deleted'), 'alert_error');
+		\$this->redirect(array('action' => 'index'));
+	}
+
+/**
+ * admin_index method
+ *
+ * @return void
+ */
+	public function admin_index() {
+		\$this->${2:model}->recursive = 0;
+		\$this->set('${3:var}s', \$this->paginate());
+	}
+
+/**
+ * admin_view method
+ *
+ * @param string \$id
+ * @return void
+ */
+	public function admin_view(\$id = null) {
+		\$this->${2:model}->id = \$id;
+		if (!\$this->${2:model}->exists()) {
+			throw new NotFoundException(__('Invalid ${3:var}'));
+		}
+		\$this->set('${3:var}', \$this->${2:model}->read(null, \$id));
+	}
+
+/**
+ * admin_add method
+ *
+ * @return void
+ */
+	public function admin_add() {
+		if (\$this->request->is('post')) {
+			\$this->${2:model}->create();
+			if (\$this->${2:model}->save(\$this->request->data)) {
+				\$this->Session->setFlash(__('The ${3:var} has been saved'), 'alert_success');
+				\$this->redirect(array('action' => 'index'));
+			} else {
+				\$this->Session->setFlash(__('The ${3:var} could not be saved. Please, try again.'), 'alert_error');
+			}
+		}
+		\$${3:var}s = \$this->${2:model}->${2:model}->find('list');
+		\$this->set(compact('${3:var}s'));
+	}
+
+/**
+ * admin_edit method
+ *
+ * @param string \$id
+ * @return void
+ */
+	public function admin_edit(\$id = null) {
+		\$this->${2:model}->id = \$id;
+		if (!\$this->${2:model}->exists()) {
+			throw new NotFoundException(__('Invalid ${3:var}'));
+		}
+		if (\$this->request->is('post') || \$this->request->is('put')) {
+			if (\$this->${2:model}->save(\$this->request->data)) {
+				\$this->Session->setFlash(__('The ${3:var} has been saved'), 'alert_success');
+				\$this->redirect(array('action' => 'index'));
+			} else {
+				\$this->Session->setFlash(__('The ${3:var} could not be saved. Please, try again.'), 'alert_error');
+			}
+		} else {
+			\$this->request->data = \$this->${2:model}->read(null, \$id);
+		}
+		\$${3:var}s = \$this->${2:model}->${2:model}->find('list');
+		\$this->set(compact('${3:var}s'));
+	}
+
+/**
+ * admin_delete method
+ *
+ * @param string \$id
+ * @return void
+ */
+	public function admin_delete(\$id = null) {
+		if (!\$this->request->is('post')) {
+			throw new MethodNotAllowedException();
+		}
+		\$this->${2:model}->id = \$id;
+		if (!\$this->${2:model}->exists()) {
+			throw new NotFoundException(__('Invalid ${3:var}'));
+		}
+		if (\$this->${2:model}->delete()) {
+			\$this->Session->setFlash(__('${2:model} deleted'), 'alert_success');
+			\$this->redirect(array('action' => 'index'));
+		}
+		\$this->Session->setFlash(__('${2:model} was not deleted'), 'alert_error');
+		\$this->redirect(array('action' => 'index'));
+	}	
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cc</tabTrigger>
+	<description>
+		CakePHP Controller 2.0
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

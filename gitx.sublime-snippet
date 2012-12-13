@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+${1:app/}tmp/**
+${1:app/}database.php
+${1:app/}email.php
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gitx</tabTrigger>
+	<description>
+		git excludes
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

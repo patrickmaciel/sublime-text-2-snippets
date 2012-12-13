@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<div class="clearfix">
+	<?php echo \$this->Form->label('${1:field}', '${2:label}') ?>
+	<div class="input">
+		<?php echo \$this->Form->input('${1:field}', array('class' => '${3:class}', 'type' => '${4:type}' ${5:other})) ?>
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fbs</tabTrigger>
+	<description>Cria campo do formularío (CakePHP) usando os padrões do Bootstrap (twitter)</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+echo \$this->Html->script('${1:script}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ths</tabTrigger>
+	<description>
+		Html script
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

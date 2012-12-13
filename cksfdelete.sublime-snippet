@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+${1:Usuário} deletad${2:o} com sucesso
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cksfdelete</tabTrigger>
+	<description>
+		cakephp session flash delete
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<input id="${1:name}" class="span${2:9}" name="${1:name}" type="${3:text}" placeholder="${4:placeholder}" value="${5}" />
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>b-i</tabTrigger>
+	<description>
+		booststrap input br
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

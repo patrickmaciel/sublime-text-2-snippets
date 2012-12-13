@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+if (\$this->request->is('ajax')) {		
+	\$this->autoRender = false;
+	\$this->layout = 'ajax';
+
+	if(isset(\$this->params->pass[0])) {
+		\$this->${1:Model}->id = \$this->params->pass[0];
+		if (!\$this->${1:Model}->exists()) {
+			
+		}
+		if (\$this->${1:Model}->delete()) {
+			return true;
+		}
+	} 
+	
+} else {	
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ada</tabTrigger>
+	<description>
+		admin delete ajax
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+DS . 'home' . DS . 'patrick' . DS . 'workspace' . DS . 'base' . DS . 'frameworks' . DS . 'cakephp' . DS . 'last' . DS . 'lib'
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cakecore</tabTrigger>
+	<description>
+		CakePHP core
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

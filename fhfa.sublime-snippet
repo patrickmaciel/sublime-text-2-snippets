@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<div class="form-actions">
+  <?php echo \$this->Form->button(__('${1:Send}'), array('type' => '${2:submit}', 'class' => 'btn btn-success ${3}', 'data-loading-text' => __('Wait') . '...')) ?>
+  <?php echo \$this->Form->button(__('${4:Cancel}'), array('class' => 'btn btn-clean ${5}')) ?>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fhfa</tabTrigger>
+	<description>
+		form helper form actions
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

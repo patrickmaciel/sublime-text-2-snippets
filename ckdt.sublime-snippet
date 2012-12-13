@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\$this->Time->format('d-m-Y H:i:s',
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ckdt</tabTrigger>
+	<description>
+		CakePHP date pt-br
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

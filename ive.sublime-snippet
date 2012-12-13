@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+echo \$this->Html->image('/uploads/' . \$this->Time->format('Y/m/d', \$this->request->data['${1:Model}']['created']) . '/${2:folder}/' . \$this->request->data['${1:Model}']['${3:field}'], array('class' => 'preview', 'alt' => \$this->request->data['${1:Model}']['${4:alt}']));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ive</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * ${1:function} method
+ *
+ * @param ${2:params}
+ * @return ${3:return}
+ */
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>comd</tabTrigger>
+	<description>
+		commment doc
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

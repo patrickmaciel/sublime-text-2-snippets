@@ -1,0 +1,63 @@
+<snippet>
+	<content><![CDATA[
+<?php
+App::uses('AppModel', 'Model');
+/**
+ * ${1:model} Model
+ *
+ * @property Empreendimento \$Empreendimento
+ */
+class ${1:model} extends AppModel {
+
+	public \$displayField = '${2:display}';
+	public \$useTable = '${3:table}';
+	public \$actsAs = array(${4:as});
+
+/**
+ * Validation rules
+ *
+ * @var array
+ */
+	public \$validate = array(
+	);
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public \$belongsTo = array(
+
+	);
+
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public \$hasMany = array(
+
+	);
+
+
+/**
+ * hasBelongsToMany associations
+ *
+ * @var array
+ */
+	public \$hasBelongsToMany = array(
+
+	);
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cm</tabTrigger>
+	<description>
+		CakePHP Model 2.0
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

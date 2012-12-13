@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<?php 
+	// localhost
+	\$gets[3] = \$gets[5];
+	\$gets[4] = \$gets[6];
+	\$gets[5] = \$gets[7];
+	\$gets[6] = \$gets[8];
+	\$gets[7] = \$gets[9];
+?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pws-get</tabTrigger>
+	<description>
+		pws gets localhost
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
