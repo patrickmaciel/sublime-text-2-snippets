@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"AutoSelect",
+		"ColorSchemeSelector",
 		"Emmet",
 		"EncodingHelper",
 		"FTPSync",
@@ -35,7 +36,9 @@
 		"Theme - Nexus",
 		"Theme - Nil",
 		"Theme - Refined",
+		"Theme - Refresh",
 		"Translate",
+		"Xdebug",
 		"YUI Compressor"
 	]
 }

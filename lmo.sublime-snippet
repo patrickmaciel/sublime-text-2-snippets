@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+<?php 
+	class ${1:model} extends Basemodel {
+
+		public static \$rules = array(
+			'status_id' => 'required'
+		);
+
+		public function status()
+		{
+			return \$this->belongs_to('Status');
+		}
+
+		public static function listAll()
+		{
+			return static::with('status')
+				->with('user')
+				->paginate(25, array('id', 'logo', 'fancy_name', 'logo', 'created_at', 'updated_at', 'status_id'));
+		}
+
+		public static function selectList()
+		{
+			return static::where_status_id(1)
+				->lists('name', 'id');
+		}
+
+	}
+?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lmo</tabTrigger>
+	<description>Laravel Model</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

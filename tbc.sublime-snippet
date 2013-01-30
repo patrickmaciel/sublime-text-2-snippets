@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[<div class="control-group">
+	<div class="controls">
+		<label class="checkbox">
+			<input name="${1:name}" id="${1:name}" type="checkbox" ${2:class}> ${3:label} 
+		</label>
+	</div>
+</div>]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tbc</tabTrigger>
+	<description>
+		twitter bottstrap input checkbox
+	</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

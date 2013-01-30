@@ -1,0 +1,101 @@
+<snippet>
+	<content><![CDATA[
+@layout('layouts/admin')
+
+@section('navigation')
+@endsection
+
+@section('content')
+    <div class="row-fluid">
+        @parent
+        
+        <div class="span9">
+        	<h1>${1:plural} :: Atualizar</h1>
+
+        	<p class="lead">Nesta página, você atualiza as informações do registro.</p>
+
+        	<div class="well">
+                <a href="/admin/${2:rota}/cadastrar" class="btn btn-primary">Cadastrar</a>
+                <a href="/admin/${2:rota}/ver/{{ \$${3:var}->id }}" class="btn btn-info">Ver</a>
+        		<a href="/admin/${2:rota}/excluir/{{ \$${3:var}->id }}" class="btn btn-danger btn-modaldelete">Excluir</a>
+        	</div>
+
+            @if(Session::has('message'))
+            <div class="alert alert-success">
+                {{ Session::get('message') }}
+            </div> 
+            @elseif(Session::has('alert'))
+            <div class="alert alert-error">
+                {{ Session::get('alert') }}
+            </div> 
+            @endif
+
+            <form action="/admin/${2:rota}/atualizar" method="POST" class="form-horizontal">
+
+                <input type="hidden" id="id" name="id" value="{{ \$${3:var}->id }}">
+                <input type="hidden" name="csrf_token" value="{{ Session::token() }}">
+
+                @if(\$errors->has('status_id'))
+                <div class="control-group error">
+                @else
+                <div class="control-group">
+                @endif
+                    <label class="control-label" for="status_id">Status</label>
+                    <div class="controls">
+                        <select id="status_id" name="status_id" class='span6'>
+                            @if(isset(\$statuses))
+                                <option value="">Selecione um valor</option>
+                                @foreach(\$statuses as \$id => \$status)
+                                    <option value="{{ \$id }}" {{ (\$companytype->status_id == \$id ? 'selected="selected"' : '') }} >{{ \$status }}</option>
+                                @endforeach
+                            @endif
+                        </select>
+                        
+                        @if(\$errors->has('status_id'))
+                            @foreach(\$errors->get('status_id') as \$error)
+                                <span class="help-inline">{{ \$error }}</span>
+                            @endforeach
+                        @endif
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                    <button class="btn btn-success" type="submit">Enviar</button>
+                    <button class="btn" type="button">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+	</div>
+@endsection
+
+@section('scripts')
+<script type="text/javascript">
+    \$(document).ready(function() {
+        \$('.editor').redactor({
+            imageUpload: '/vendors/redactor/image_upload.php',
+            fileUpload: '/vendors/redactor/file_upload.php',
+            imageGetJson: '/vendors/redactor/json/data.json'            
+        });
+
+        \$('.btn-modaldelete').click(function() {
+            \$('#link-delete').attr('href', \$(this).attr('href'));
+            \$('#modalDelete').removeData('modal');
+            \$('#modalDelete').modal();
+            return false;
+        });
+
+        \$("#modalDelete").on("hide", function() {
+            \$(this).removeData('modal');
+        });        
+    });
+</script>
+@endsection
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lviu</tabTrigger>
+	<description>Laravel View Update</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

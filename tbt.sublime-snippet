@@ -3,7 +3,7 @@
 <div class="control-group">
 	<label class="control-label" for="${1:name}">${2:field}</label>
 	<div class="controls">
-		<textarea id="${1:name}" placeholder="${2:field}" rows="${3:3}"></textarea>
+		<textarea id="${1:name}" name="${1:name}" placeholder="${2:field}" rows="${3:3}" ${4:class}></textarea>
 	</div>
 </div>
 ]]></content>

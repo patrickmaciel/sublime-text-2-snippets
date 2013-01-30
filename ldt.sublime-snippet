@@ -1,21 +1,12 @@
 <snippet>
 	<content><![CDATA[
-/**
- * ${1:function} method
- *
- * @param ${2:params}
- * @return ${3:return}
- */
-${4:public} function ${1:function}(${2:params})
-{
-	
-}
+<dt>${1:label}: </dt>
+<dd>{{ \$${2:model}->${3:field} }}</dd>
+<hr>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>pfunc</tabTrigger>
-	<description>
-		php function
-	</description>
+	<tabTrigger>ldt</tabTrigger>
+	<description>Laravel dt dd hr</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

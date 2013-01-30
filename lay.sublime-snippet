@@ -3,9 +3,7 @@
 @layout('${1:template}')
 
 @section('${2:content}')
-
-    ${3:// more code}
-    
+    ${3:code}
 @endsection
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

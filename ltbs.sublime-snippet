@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+@if(\$errors->has('${1:field}'))
+<div class="control-group error">
+@else
+<div class="control-group">
+@endif
+	<label class="control-label" for="${1:field}">${2:label}</label>
+	<div class="controls">
+		<select id="${1:field}" name="${1:field}" class='${3:span6}'>
+			@if(isset(\$${5:array}))
+				@foreach(\$${5:array} as \$id => \$value)
+					<option value="{{ \$id }}">{{ \$value }}</option>
+				@endforeach
+			@endif
+		</select>
+		
+		@if(\$errors->has('${1:field}'))
+			@foreach(\$errors->get('${1:field}') as \$error)
+				<span class="help-inline">{{ \$error }}</span>
+			@endforeach
+		@endif
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ltbs</tabTrigger>
+	<description>Laravel Twitter Bootstrap Field</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

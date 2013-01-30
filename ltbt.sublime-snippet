@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+@if(\$errors->has('${1:field}'))
+<div class="control-group error">
+@else
+<div class="control-group">
+@endif
+	<label class="control-label" for="${1:field}">${2:label}</label>
+	<div class="controls">
+		<textarea id="${1:field}" name="${1:field}" class='editor ${3:span12}' rows="${4:4}">{{ Input::old('${1:field}') }}</textarea>
+		
+		@if(\$errors->has('${1:field}'))
+			@foreach(\$errors->get('${1:field}') as \$error)
+				<span class="help-inline">{{ \$error }}</span>
+			@endforeach
+		@endif
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ltbt</tabTrigger>
+	<description>Laravel Twitter Bootstrap Textarea</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

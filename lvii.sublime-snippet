@@ -1,0 +1,98 @@
+<snippet>
+	<content><![CDATA[
+@layout('layouts/admin')
+
+@section('navigation')
+@endsection
+
+@section('content')
+    <div class="row-fluid">
+	   @parent
+
+    	<div class="span9">
+    		<h1>${1:plural}</h1>
+    		
+    		<p class="lead">Listagem de ${1:plural} ativos e inativos</p>
+    		
+    		<div class="well">
+    			<a href="/admin/${2:rota}/cadastrar" class="btn btn-primary">Cadastrar</a>
+    		</div>
+
+            @if(Session::has('message'))
+            <div class="alert alert-success">
+                {{ Session::get('message') }}
+            </div>
+            @endif
+
+            @if(Session::has('alert'))
+            <div class="alert alert-error">
+                {{ Session::get('alert') }}
+            </div>
+            @endif
+    		
+    		<table class="table table-hover">
+    			<thead>
+    				<tr>
+    					<th>*</th>
+    					<th>id</th>
+                        <th>Criado</th>
+                        <th>Modificado</th>
+    					<th>Status</th>
+    					<th>Ações</th>
+    				</tr>
+    			</thead>
+    		
+    			<tbody>
+                    @foreach(\$${4:array}->results as \$${3:var})
+                    <tr>
+                        <td></td>
+                        <td>{{ \$${3:var}->id }}</td>
+                        <td>{{ \$${3:var}->created_at }}</td>
+                        <td>{{ \$${3:var}->updated_at }}</td>
+                        <td>{{ \$${3:var}->status->name }}</td>
+    					<td>
+                            <div class="btn-company">
+                                <a href="/admin/${2:rota}/ver/{{ \$${3:var}->id }}" class="btn btn-info">Ver</a>
+                                <a href="/admin/${2:rota}/editar/{{ \$${3:var}->id }}" class="btn btn-warning">Editar</a>
+                                <a href="/admin/${2:rota}/excluir/{{ \$${3:var}->id }}" class="btn btn-danger btn-modaldelete">Excluir</a>
+                            </div>               
+                        </td>
+    				</tr>
+    				@endforeach
+    			</tbody>
+    		
+    			<tfoot>
+    				<tr>
+    					<td colspan="9">
+    						{{ \$${4:array}->links() }}
+    					</td>
+    				</tr>
+    			</tfoot>
+    		</table>
+    	</div>
+	</div>
+@endsection
+
+@section('scripts')
+<script type="text/javascript">
+    \$(document).ready(function() {
+        \$('.btn-modaldelete').click(function() {
+            \$('#link-delete').attr('href', \$(this).attr('href'));
+            \$('#modalDelete').removeData('modal');
+            \$('#modalDelete').modal();
+            return false;
+        });
+
+        \$("#modalDelete").on("hide", function() {
+            \$(this).removeData('modal');
+        });        
+    });
+</script>
+@endsection
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lvii</tabTrigger>
+	<description>Laravel View Index</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

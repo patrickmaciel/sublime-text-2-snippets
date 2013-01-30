@@ -1,0 +1,104 @@
+<snippet>
+	<content><![CDATA[
+<?php namespace Controllers;
+use Illuminate\Routing\Controllers\Controller;
+
+class ${1:controller}Controller extends Controller {
+
+	public \$restful = true;
+
+	public function get_index()
+	{
+		return View::make('admin.${2:low_controller}.index')
+			->with('title', 'Listar ${5:plural_controller}');
+	}
+
+	public function get_create()
+	{
+		return View::make('admin.${2:low_controller}.create')
+			->with('title', 'Cadastrar ${7:singular_controller}');
+	}
+
+	public function post_store()
+	{
+		\$validation = ${4:model}::validate(Input::all());
+		if(\$validation->fails()) {
+			return Redirect::back()
+				->with_input()
+				->with_errors(\$validation->errors);
+		} else {
+			\$${3:low_model} = new ${4:model}();
+			\$${3:low_model}->name = Input::get('name');
+			\$${3:low_model}->save();
+
+			Session::flash('message', '${7:singular_controller} cadastrado com sucesso!');
+			return Redirect::to('admin/${6:low_plural_controller}');
+		}
+	}
+
+	public function get_edit(\$id)
+	{
+		if(\$id == null) {
+			Session::flash('alert', '${7:singular_controller} inválido');
+			return Redirect::to('admin/${6:low_plural_controller}');
+		}
+
+		return View::make('admin.${2:low_controller}.update')
+			->with('${3:low_model}', ${4:model}::find(\$id))
+			->with('statuses', Status::selectAll());			
+	}
+
+	public function post_update()
+	{
+		\$validation = ${4:model}::validate(Input::all());
+		if(\$validation->fails()) {
+			return Redirect::to('admin/${6:low_plural_controller}/editar/' . Input::get('id'))
+				->with_inputs()
+				->with_errors(\$validation->errors);
+		}
+
+		\$${3:low_model} = ${4:model}::find(Input::get('id'));
+		\$${3:low_model}->name = Input::get('name');
+		\$${3:low_model}->save();
+
+		Session::flash('message', '${7:singular_controller} atualizado com sucesso!');
+		return Redirect::to('admin/${6:low_plural_controller}')
+			->with('title', 'Listar ${5:plural_controller}');
+	}
+
+	public function get_show(\$id)
+	{
+		if(\$id == null) {
+			Session::flash('alert', '${7:singular_controller} inválido');
+			return Redirect::to('admin/${6:low_plural_controller}');
+		}
+
+		return View::make('admin.${2:low_controller}.view')
+			->with('${3:low_model}', ${4:model}::find(\$id)->with('status'));
+	}
+
+	public function get_destroy(\$id)
+	{
+		if(\$id == null) {
+			Session::flash('alert', '${7:singular_controller} inválido');
+			return Redirect::to('admin/${6:low_plural_controller}')
+				->with('title', 'Listar ${5:plural_controller}');
+		}
+
+		\$${3:low_model} = ${4:model}::find(\$id);
+		\$${3:low_model}->delete();
+
+		Session::flash('message', '${7:singular_controller} excluído com sucesso!');
+		return Redirect::to('admin/${6:low_plural_controller}')
+			->with('title', 'Listar ${5:plural_controller}');
+	}
+
+}
+?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lcc</tabTrigger>
+	<description>Laravel 4 Controller</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
